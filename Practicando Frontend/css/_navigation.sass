@@ -1,0 +1,64 @@
+.navigation
+	background: $bg_Navigation
+	height: 2.5em
+	position: fixed
+	width: 100%
+	top: 0
+
+.navigation__items
+	height: 100%
+	min-width: 241px
+
+.navigation__item
+	display: inline-block
+	width: auto
+	height: 2.5em
+
+.navigation__item--right
+	float: right
+
+.info-user-inline
+	width: 200px
+	background-color: $bg_User-line
+	padding: 0.2em 0.2em
+	height: 100%
+	color: $fc_User-line
+	cursor: pointer
+
+.info-user-inline--active
+	height: 250px
+	background-color: $bg_User-line--active
+	color: $fc_User-line--active
+	box-shadow: 1px 2px 2px 2px $boxshadow_User-line
+
+.info-user-inline--active .info-user-inline__photo
+	transform: translate(85px,30px) scale(2.5)
+
+.info-user-inline--active .info-user-inline__name
+	transform: translate(0px,80px)
+
+.info-user-inline:hover
+	background-color: $bg_User-line-hover
+	color: $fc_User-line-hover
+
+
+.info-user-inline__photo
+	height: 30px
+	width: 30px
+	margin-right: 0.1em
+
+
+.info-user-inline__name
+	max-width: 150px
+	display: inline-block
+	overflow: hidden
+	text-overflow: ellipsis
+	max-height: 20px
+	white-space: nowrap
+	font-family: $font-name
+	font-size: 1em
+
+.navigation-spicker
+	margin: 0.2em
+	color: $fc_Spicker
+	cursor: pointer
